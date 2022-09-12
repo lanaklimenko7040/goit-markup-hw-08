@@ -1,9 +1,18 @@
-.hero {
+.hero.container {
     /* background-color:#2F303A; */
-    padding-top: 200px;
-    padding-bottom: 200px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
     text-align: center;
     margin-top: auto;
+    padding:0px;
+    padding: 118px 60px;
+    @include tablet {
+    padding: 118px 204px;
+    }
+    @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
 }
 
 .hero-bg {
@@ -15,14 +24,13 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .hero__title {
     font-family: Roboto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -30,7 +38,13 @@
     margin: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    max-width: 696px;
+    // max-width: 696px;
+    @include desktop{
+        font-size: 44px;
+        line-height: 1.36;
+    
+       
+    }
 
 }
 
@@ -55,6 +69,9 @@
     &:hover,
     &:focus {
     background-color: #188CE8;
+    }
+    @include desktop{
+        width: 216px;
     }
 }
 

@@ -6,10 +6,20 @@
     margin-left: auto;
     margin-right: auto;
 }
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 
 .contact.container {
     display: flex;
-
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    
 }
 
 .footer__logo {
@@ -21,7 +31,10 @@
     margin-bottom: 20px;
     display: inline-block;
 }
-
+.contact__list{
+     text-align: center;
+    
+}
 
 
 .contact__item:not(:last-child) {
@@ -30,8 +43,8 @@
 
 .address {
     font-style: normal;
-
-}
+    
+   }
 
 .contact__map {
     font-style: normal;
@@ -78,14 +91,15 @@
 }
 
 .footer-connect {
-    margin-left: 70px;
+    text-align: center;
+   @include tablet{
+    margin-left: 70px;}
 }
 
 .footer-socials{
     display: flex;
     gap: 10px;
-    align-items: baseline;
-
+    align-items: center;
 }
 .footer-connect__text {
     font-family: Roboto, sans-serif;
@@ -111,9 +125,7 @@
     background-color: var(--hover-color);
     }
 }
-.footer-email {
-    margin-left: 93px;
-}
+
 .footer-email__text {
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -123,15 +135,13 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.form-email {
-    display: flex;
-    align-items: baseline;
-}
+
 
 .form-email__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -145,7 +155,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     outline: transparent;
-    margin-right: 12px;
+   
     transition: border-color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -169,6 +179,7 @@
     height: 50px;
     width: 200px;
     transition: background-color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin-top: 20px;
 }
 
 .button-icon-send {

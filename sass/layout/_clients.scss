@@ -2,23 +2,32 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+ @include desktop {
+            padding-top: 94px;
+            padding-bottom: 94px;}
 }
+
 .clients__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--first-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
+    @include desktop{
+        font-size: 36px;
+        margin-bottom: 50px;
+ }
 }
-
 .block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
-
 .block__link {
     width: 170px;
     height: 92px;
@@ -35,5 +44,6 @@
     border-color: var(--hover-color);
     fill: var(--hover-color);
     }
+    
 }
 

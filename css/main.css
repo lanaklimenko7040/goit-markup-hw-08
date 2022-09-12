@@ -39,6 +39,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -55,11 +56,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo--color-dark {
@@ -416,12 +432,23 @@ img {
   color: var(--hover-color);
 }
 
-.hero {
+.hero.container {
   /* background-color:#2F303A; */
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   margin-top: auto;
+  padding: 0px;
+  padding: 118px 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero.container {
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero.container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-bg {
@@ -437,8 +464,8 @@ img {
 .hero__title {
   font-family: Roboto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -446,7 +473,12 @@ img {
   margin: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  max-width: 696px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -471,21 +503,46 @@ img {
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
 }
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    width: 216px;
+  }
+}
+
+.info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .info__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
 }
 
-.info__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .info__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .info__soc {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -500,6 +557,12 @@ img {
   text-transform: uppercase;
   color: var(--first-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .info__title {
+    text-align: left;
+  }
 }
 
 .info__text {
@@ -508,6 +571,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.about {
+  display: none;
 }
 
 .about__title {
@@ -554,20 +621,35 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
   list-style: none;
@@ -579,6 +661,17 @@ img {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .card-list__rectangle {
@@ -628,20 +721,35 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -671,8 +779,17 @@ img {
   margin-right: auto;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact.container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
 }
 
 .footer__logo {
@@ -683,6 +800,10 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   display: inline-block;
+}
+
+.contact__list {
+  text-align: center;
 }
 
 .contact__item:not(:last-child) {
@@ -735,13 +856,18 @@ img {
 }
 
 .footer-connect {
-  margin-left: 70px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-connect {
+    margin-left: 70px;
+  }
 }
 
 .footer-socials {
   display: flex;
   gap: 10px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .footer-connect__text {
@@ -768,10 +894,6 @@ img {
   background-color: var(--hover-color);
 }
 
-.footer-email {
-  margin-left: 93px;
-}
-
 .footer-email__text {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -781,15 +903,11 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
-}
-
-.form-email {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .form-email__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -803,7 +921,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: transparent;
-  margin-right: 12px;
   transition: border-color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -826,6 +943,7 @@ img {
   height: 50px;
   width: 200px;
   transition: background-color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
 }
 
 .button-icon-send {
