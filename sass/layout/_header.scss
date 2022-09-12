@@ -16,6 +16,8 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-right: 93px;
+    display: flex;
+    align-items: baseline;
 }
 
 .logo__text {
@@ -26,8 +28,12 @@
     letter-spacing: 0.03em;
 }
 
+.logo{
+    
+}
+
 .navigation {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -80,7 +86,7 @@
 }
 
 .header__connect {
-    display: flex;
+    display: none;
     margin-left: auto;
     align-items: center;
 }
