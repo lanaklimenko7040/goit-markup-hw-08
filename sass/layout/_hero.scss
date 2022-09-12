@@ -5,12 +5,18 @@
     text-align: center;
     margin-top: auto;
     padding:0px;
+    
+   @include mobile {
     padding: 118px 60px;
-   
-    @include desktop {
+        }
+ @include tablet {
+padding: 118px 204px;
+        }
+   @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
-    }
+ }
+    
 }
 
 .hero-bg {
@@ -46,6 +52,12 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     margin-right: auto;
     margin-bottom: 30px;
     // max-width: 696px;
+@include mobile {
+        font-size: 26px;
+        line-height: 1.62;}
+    @include tablet {
+            font-size: 26px;
+            line-height: 1.62;}
     @include desktop{
         font-size: 44px;
         line-height: 1.36;
