@@ -324,8 +324,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  display: flex;
-  align-items: baseline;
 }
 
 .logo__text {
@@ -334,6 +332,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  align-items: baseline;
 }
 
 .navigation {
