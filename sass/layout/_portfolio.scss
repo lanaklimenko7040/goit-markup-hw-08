@@ -1,9 +1,18 @@
+
+.portfolio{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
 .top-button {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    // justify-content: center;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .top-button__link {
@@ -33,6 +42,17 @@
     gap: 30px;
 
 }
+.products__item{
+    width: 100%;
+
+@include tablet {
+    width: calc((100% - 30px) / 2);
+}
+
+@include desktop {
+    width: calc((100% - 60px) / 3);
+}
+}
 
 .products__link {
     display: block;
@@ -46,9 +66,8 @@
 
 .products__wrap {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;}
 
-}
 .products__text {
     position: absolute;
     top: 0;
