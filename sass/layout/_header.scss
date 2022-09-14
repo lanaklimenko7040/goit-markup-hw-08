@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid #ECECEC;
+    // border-bottom: 1px solid #ECECEC;
     // padding-top: 24px;
     // padding-bottom: 25px;
     >.container {
@@ -18,6 +18,13 @@
     margin-right: 93px;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include tablet{
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 88px;
+        font-size: 24px;
+                line-height: 1.17;
+                }
     
 }
 
@@ -28,13 +35,20 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     align-items: baseline;
-}
-
-
-
+   }
 .navigation {
+    @include mobile{
     display: none;
     align-items: center;
+    }
+    @include tablet{
+        display:flex;
+        align-items: center;
+    }
+         @include desktop {
+             display: flex;
+             align-items: center;
+         }
 }
 
 .navigation__list {
@@ -86,15 +100,28 @@
 }
 
 .header__connect {
+    @include mobile{
     display: none;
     margin-left: auto;
-    align-items: center;
+    align-items: center;}
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+     
 }
 
 .connect__item:not(:last-child) {
-    margin-right: 50px;
+    padding-bottom: 10px;
 }
 
+.connect__item{
+    @include tablet{
+        margin-left: 90px;
+       
+    }
+}
 .connect__icon {
     display: flex;
     align-items: center;
@@ -105,8 +132,14 @@
     background-color: #FFFFFF;
     fill: currentColor;
         }
+        @include tablet{
+            width: 10px;
+            height: 12px;
+            margin-right: 8px;
+        }
+    }
 
-}
+
 
 .connect__mail {
     display: flex;
@@ -122,6 +155,9 @@
     &:focus {
     color: var(--hover-color);
     }
+         @include tablet {
+             font-size: 12px;
+             line-height: 1.17px;}
 
 }
 .connect__tel {
@@ -138,6 +174,10 @@
     &:focus {
     color: var(--hover-color)
     }
+    @include  tablet{
+        font-size: 12px;
+        line-height: 1.17px;
+    }
 
 }
 .menu-open{
@@ -149,7 +189,12 @@
     padding: 0px;
     cursor: pointer;
     display: flex;
+    @include tablet {
+        display: none;
+    }
 }
+
+
 .mob-menu {
     position: fixed;
     z-index: 2;
