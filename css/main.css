@@ -428,6 +428,13 @@ img {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__connect {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
 
 .connect__item:not(:last-child) {
   padding-bottom: 10px;

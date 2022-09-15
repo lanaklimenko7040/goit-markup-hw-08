@@ -23,7 +23,7 @@
         padding-bottom: 26px;
         margin-right: 88px;
         font-size: 24px;
-                line-height: 1.17;
+        line-height: 1.17;
                 }
     
 }
@@ -109,9 +109,12 @@
         flex-direction: column;
         align-items: baseline;
     }
-     
+         @include desktop {
+             display: flex;
+             flex-direction:row;
+             align-items: baseline;
 }
-
+}
 .connect__item:not(:last-child) {
     padding-bottom: 10px;
 }
