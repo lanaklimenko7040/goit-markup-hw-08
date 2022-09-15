@@ -1,6 +1,10 @@
 .about{
-    display: none;
-}
+   display: none;
+   @include desktop{
+display: flex;
+   }
+   }
+
 
 .about__title {
     font-weight: 700;
