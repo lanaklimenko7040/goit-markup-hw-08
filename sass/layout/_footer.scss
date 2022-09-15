@@ -91,9 +91,16 @@
 }
 
 .footer-connect {
+
     text-align: center;
    @include tablet{
-    margin-left: 70px;}
+    margin-left: 70px;
+    }
+        @include desktop {
+        margin-left: 70px;
+        text-align: left;
+        
+        }
 }
 
 .footer-socials{
@@ -110,6 +117,9 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    @include desktop {
+        
+    }
 
 }
 .footer-socials__link {
@@ -155,10 +165,10 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     outline: transparent;
-   
     transition: border-color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 
 .footer-email__button {
     font-family: 'Roboto', sans-serif;

@@ -12,12 +12,18 @@
 .header__logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 18px;
+    line-height: 1.22;
     letter-spacing: 0.03em;
-    margin-right: 93px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    // margin-right: 93px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    @include mobile {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 24px;
+            line-height: 1.17;
+        }
     @include tablet{
         padding-top: 26px;
         padding-bottom: 26px;
@@ -25,29 +31,54 @@
         font-size: 24px;
         line-height: 1.17;
                 }
-    
+    @include desktop{
+        padding-top: 24px;
+        padding-bottom: 25px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
-
 .logo__text {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 18px;
+    line-height: 1.22;
     letter-spacing: 0.03em;
     align-items: baseline;
-   }
+    @include mobile {
+            // padding-top: 16px;
+            // padding-bottom: 16px;
+            
+            font-size: 24px;
+            line-height: 1.17;
+        }
+    
+        @include tablet {
+            padding-top: 26px;
+            padding-bottom: 26px;
+            // margin-right: 88px;
+            font-size: 24px;
+            line-height: 1.17;
+        }
+    
+        @include desktop {
+            padding-top: 24px;
+            padding-bottom: 25px;
+            font-size: 26px;
+            line-height: 1.19;
+        }
+ }
+
 .navigation {
-    @include mobile{
-    display: none;
+   display: none;
+   align-items: center;
+   @include tablet{
+    display:flex;
     align-items: center;
     }
-    @include tablet{
-        display:flex;
-        align-items: center;
-    }
-         @include desktop {
-             display: flex;
-             align-items: center;
+    @include desktop {
+    display: flex;
+    align-items: center;
          }
 }
 
@@ -100,10 +131,9 @@
 }
 
 .header__connect {
-    @include mobile{
     display: none;
     margin-left: auto;
-    align-items: center;}
+    align-items: center;
     @include tablet{
         display: flex;
         flex-direction: column;
@@ -195,6 +225,9 @@
     @include tablet {
         display: none;
     }
+        @include desktop {
+            display: none;
+        }
 }
 
 
