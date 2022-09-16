@@ -21,6 +21,12 @@
 }
 
 .hero-bg {
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), url(/images/hero-bg-tel.jpg);
     @include retina {
@@ -44,12 +50,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 }
 
         }
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+   
 }
 
 .hero__title {
