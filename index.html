@@ -293,7 +293,16 @@
           </li>
 
           <li class="card-list__item">
-            <img src="./images/marketing.jpg" alt="marketing" width="270" height="260" />
+            <picture>
+              <source srcset="./images/marketing.jpg 1x, 
+                                    ./images/marketing-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/marketing-tab-1x.jpg 1x, 
+                                                ./images/marketing-tab-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/marketing-tel-1x.jpg 1x, 
+                                                            ./images/marketing-tel-2x.jpg 2x"
+                media="(max-width:767)px">
+              <img src="./images/marketing-tel-1x.jpg" alt="marketing" />
+            </picture>
             <div class="card-list__rectangle">
               <h3 class="card-list__name">Николай Тарасов</h3>
               <p class="card-list__text">Marketing</p>
