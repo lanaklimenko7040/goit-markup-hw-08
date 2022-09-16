@@ -182,7 +182,7 @@
         <h2 class="about__title">Чем мы занимаемся</h2>
         <ul class="picture list">
           <li class="picture__item">
-            <img src="./images/computer.jpg" alt="computer" width="370" height="294" />
+            <img srcset="" src="./images/computer.jpg" alt="computer" width="370" height="294" />
             <p class="picture__text">Десктопные приложения</p>
           </li>
           <li class="picture__item">
@@ -201,7 +201,15 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="card-list">
           <li class="card-list__item">
-            <img src="./images/designer.jpg" alt="designer" width="270" height="260" />
+            <picture>
+              <source srcset="./images/designer.jpg 1x, 
+            ./images/designer-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/designer-tab-1x.jpg 1x, 
+                        ./images/designer-tab-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/designer-tel-1x.jpg 1x, 
+                                    ./images/designer-tel-2x.jpg 2x" media="(max-width:767)px">
+              <img src="./images/designer-tel-1x.jpg" alt="designer" />
+            </picture>
             <div class="card-list__rectangle">
               <h3 class="card-list__name">Игорь Демьяненко</h3>
               <p class="card-list__text">Product Designer</p>
@@ -238,7 +246,16 @@
             </div>
           </li>
           <li class="card-list__item">
-            <img src="./images/developer.jpg" alt="developer" width="270" height="260" />
+            <picture>
+              <source srcset="./images/developer.jpg 1x, 
+                        ./images/developer-2x.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/developer-tab-1x.jpg 1x, 
+                                    ./images/developer-tab-2x.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/developer-tel-1x.jpg 1x, 
+                                                ./images/developer-tel-2x.jpg 2x" media="(max-width:767)px">
+              <img src="./images/developer-tel-1x.jpg" alt="developer" />
+            </picture>
+
             <div class="card-list__rectangle">
               <h3 class="card-list__name">Ольга Репина</h3>
               <p class="card-list__text">Frontend Developer</p>
