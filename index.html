@@ -181,16 +181,28 @@
         <h2 class="about__title">Чем мы занимаемся</h2>
         <ul class="picture list">
           <li class="picture__item">
-            <img srcset="" src="./images/computer.jpg" alt="computer" width="370" height="294" />
-            <p class="picture__text">Десктопные приложения</p>
+            <picture>
+              <source srcset="./images/computer.jpg 1x, 
+                        ./images/computer-2x.jpg 2x" media="(min-width:1200px)">
+              <img srcset="" src="./images/computer.jpg" alt="computer" />
+              <p class="picture__text">Десктопные приложения</p>
+            </picture>
           </li>
           <li class="picture__item">
-            <img src="./images/telephone.jpg" alt="telephone" width="370" height="294" />
-            <p class="picture__text">Мобильные приложения</p>
+            <picture>
+              <source srcset="./images/telephone.jpg 1x, 
+                                    ./images/telephone-2x.jpg 2x" media="(min-width:1200px)">
+              <img src="./images/telephone.jpg" alt="telephone" width="370" height="294" />
+              <p class="picture__text">Мобильные приложения</p>
+            </picture>
           </li>
           <li class="picture__item">
-            <img src="./images/tablet.jpg" alt="tablet" width="370" height="294" />
-            <p class="picture__text">Дизайнерские решения</p>
+            <picture>
+              <source srcset="./images/tablet.jpg 1x, 
+                                                ./images/tablet-2x.jpg 2x" media="(min-width:1200px)">
+              <img src="./images/tablet.jpg" alt="tablet" width="370" height="294" />
+              <p class="picture__text">Дизайнерские решения</p>
+            </picture>
           </li>
         </ul>
       </div>
