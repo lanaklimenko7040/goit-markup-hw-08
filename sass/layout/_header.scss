@@ -276,22 +276,24 @@
     justify-content: space-between;
     overflow: auto;}
    
-    // padding-top: 48px;
-    // padding-bottom: 48px;
+    
 }
-
+.mob-menu-top {
+    padding-top: 48px;
+}
 .menu-close {
-    display: block;
-    margin-left: auto;
+    position: absolute;
+    right: 15px;
+    top: 10px;
     border: transparent;
     background-color: #FFFFFF;
-    margin-top: 10px;
     cursor: pointer;
-    padding: 0px;
+    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
     fill: var(--hover-color)
 
+    
 }
 }
 
@@ -315,8 +317,6 @@
     color: var(--hover-color)
         }
 }
-.mob-item:not(:last-child) {
-    margin-bottom: 32px;}
 
 .mob-tel{
     font-family: 'Roboto';

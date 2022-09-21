@@ -28,8 +28,18 @@
     justify-content: center;
     gap: 30px;
 }
+
+.block__item{
+   width: calc((100% - 30px)/2);
+@include tablet {
+    width: calc((100% - 60px) / 3);
+    }
+@include desktop {
+    width: calc((100% - 90px) / 6);
+}
+}
 .block__link {
-    width: 170px;
+    
     height: 92px;
     align-items: center;
     justify-content: center;
