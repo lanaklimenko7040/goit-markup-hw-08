@@ -133,7 +133,7 @@
 
 .header__connect {
     display: none;
-    margin-left: auto;
+    // margin-left: auto;
     align-items: center;
     @include tablet{
         display: flex;
@@ -145,29 +145,26 @@
              display: flex;
              flex-direction:row;
              align-items: baseline;
+             margin-left: auto;
              
 }
 }
 
+
+
+
  .connect__item:not(:last-child) {
                 padding-bottom: 10px;
             }
-
-        // @include desktop {
-        //     margin-right: 30px;
-        //     margin-left: auto;
-        // } 
-      
-        
-
+.connect__item:not(:last-child){
+        @include desktop {
+         margin-right: 30px;
+                
+        }  
+        } 
        
-
-
-
-       
-    
-
-.connect__icon {
+  
+   .connect__icon {
     display: flex;
     align-items: center;
     fill: currentColor;
@@ -209,6 +206,7 @@
              font-size: 12px;
              line-height: 1.17px;}
         @include desktop {
+            
             font-size: 14px;
             line-height: 1.14px;
                          }

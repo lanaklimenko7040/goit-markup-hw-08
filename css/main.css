@@ -464,7 +464,6 @@ img {
 
 .header__connect {
   display: none;
-  margin-left: auto;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -480,11 +479,18 @@ img {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-left: auto;
   }
 }
 
 .connect__item:not(:last-child) {
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .connect__icon {
@@ -1040,6 +1046,12 @@ img {
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .block {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 
 .block__item {
   width: calc((100% - 30px) / 2);
@@ -1111,6 +1123,10 @@ img {
 
 .contact__list {
   text-align: center;
+}
+
+.contact__item {
+  text-align: left;
 }
 
 .contact__item:not(:last-child) {
@@ -1214,6 +1230,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: auto;
   }
 }
 

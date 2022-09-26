@@ -41,13 +41,17 @@
      
     
 }
+.contact__item {
+    text-align: left;
 
+}
 
 .contact__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
 .address {
+    
     font-style: normal;
     
    }
@@ -148,6 +152,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: auto;
     }
         
        
